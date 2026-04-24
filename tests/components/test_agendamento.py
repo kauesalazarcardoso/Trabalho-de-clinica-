@@ -74,3 +74,6 @@ def test_nao_agenda_slot_ocupado():
     result = service.schedule_appointment(40, 1, "09:00")
 
     assert result is False
+
+def test_nao_agenda_id_negativo():
+    service = create_service()
